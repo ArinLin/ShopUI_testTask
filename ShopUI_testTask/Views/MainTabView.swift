@@ -33,8 +33,6 @@ struct MainTabView: View {
                 
                 Spacer()
                 
-                Divider()
-                
                 HStack {
                     tabButton(selectedTab: .shop,
                               imageName: "shop",
@@ -49,6 +47,8 @@ struct MainTabView: View {
                               imageName: "profile",
                               title: "Профиль")
                 }
+                .background(Color("tabbarBG").ignoresSafeArea())
+                .shadow(radius: 15)
             }
         }
         

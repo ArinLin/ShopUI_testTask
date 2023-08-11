@@ -18,6 +18,8 @@
 		849CC79B2A865D4B007F16A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC79A2A865D4B007F16A4 /* Constants.swift */; };
 		849CC79D2A8671AB007F16A4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC79C2A8671AB007F16A4 /* Extensions.swift */; };
 		849CC7A12A8696A9007F16A4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A02A8696A9007F16A4 /* SearchView.swift */; };
+		849CC7A42A86A715007F16A4 /* PromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A32A86A715007F16A4 /* PromoView.swift */; };
+		849CC7A62A86A8ED007F16A4 /* PromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A52A86A8ED007F16A4 /* PromoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		849CC79A2A865D4B007F16A4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		849CC79C2A8671AB007F16A4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		849CC7A02A8696A9007F16A4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		849CC7A32A86A715007F16A4 /* PromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoView.swift; sourceTree = "<group>"; };
+		849CC7A52A86A8ED007F16A4 /* PromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			children = (
 				845D7DE12A86433D00BCCC7B /* ShopUI_testTaskApp.swift */,
 				845D7DE32A86433D00BCCC7B /* ContentView.swift */,
+				849CC7A52A86A8ED007F16A4 /* PromoModel.swift */,
 				849CC79F2A86965A007F16A4 /* ViewModel */,
 				849CC79E2A86963C007F16A4 /* Views */,
 				849CC79C2A8671AB007F16A4 /* Extensions.swift */,
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				849CC7A02A8696A9007F16A4 /* SearchView.swift */,
+				849CC7A32A86A715007F16A4 /* PromoView.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -182,12 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849CC7A62A86A8ED007F16A4 /* PromoModel.swift in Sources */,
 				845D7DE42A86433D00BCCC7B /* ContentView.swift in Sources */,
 				849CC7A12A8696A9007F16A4 /* SearchView.swift in Sources */,
 				845D7DF02A86454000BCCC7B /* HomeViewModel.swift in Sources */,
 				845D7DE22A86433D00BCCC7B /* ShopUI_testTaskApp.swift in Sources */,
 				849CC79D2A8671AB007F16A4 /* Extensions.swift in Sources */,
 				849CC7972A864777007F16A4 /* HomeView.swift in Sources */,
+				849CC7A42A86A715007F16A4 /* PromoView.swift in Sources */,
 				849CC79B2A865D4B007F16A4 /* Constants.swift in Sources */,
 				849CC7992A8647C4007F16A4 /* ExploreView.swift in Sources */,
 				849CC7952A864694007F16A4 /* MainTabView.swift in Sources */,

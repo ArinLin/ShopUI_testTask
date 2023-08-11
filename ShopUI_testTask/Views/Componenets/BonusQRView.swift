@@ -29,7 +29,7 @@ struct BonusQRView: View {
                 }
             }
         }
-        .frame(width: 328, height: 138)
+        .frame(width: 338, height: 128)
         .background (LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing))
         .cornerRadius(15)
         .shadow(color: .black.opacity(0.2), radius: 5, x: 4, y: 4)

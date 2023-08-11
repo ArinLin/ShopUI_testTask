@@ -44,12 +44,32 @@ struct HomeView: View {
                                             .rotation3DEffect (
                                                 .degrees(-Double( geo.frame(in: .global) .minX) / 25), axis: (x: 0, y: 0, z: 0))
                                     }
-                                    .frame(width: 160, height: 200)
+                                    .frame(width: 130, height: 180)
                                 }
                             }
                         }
                     }
+                    Spacer()
+                    TitleView(title: "Рекомендуем")
+                
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack (spacing: 0) {
+                            ForEach(ProductModel.categories) { category in
+                                VStack {
+                                    GeometryReader { geo in
+                                        ProductView(item: category)
+                                            .rotation3DEffect (
+                                                .degrees(-Double( geo.frame(in: .global) .minX) / 25), axis: (x: 0, y: 0, z: 0))
+                                    }
+                                    .frame(width: 150, height: 170)
+                                }
+                            }
+                        }
+                    }
+                    Spacer()
+//                    TitleView(title: "Сладкое настроение")
                 }
+//                Spacer()
             }
         }
     }

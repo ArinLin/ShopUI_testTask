@@ -18,7 +18,6 @@ struct SearchView: View {
                     .scaledToFit()
                     .frame(width: 20, height: 20)
                 TextField(placholder, text: $txt)
-                //                .foregroundColor(Color.black)
                     .font(.custom("Helvetica Regular", size: 16))
                     .autocapitalization(.none)
                     .disableAutocorrection(true)

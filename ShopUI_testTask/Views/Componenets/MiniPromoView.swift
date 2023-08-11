@@ -14,7 +14,7 @@ struct MiniPromoView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 25)
                     .foregroundColor(Color(item.color))
-                    .frame(width: 150, height: 190)
+                    .frame(width: 120, height: 153)
                 Spacer()
                 
                 VStack(alignment: .center) {
@@ -23,12 +23,13 @@ struct MiniPromoView: View {
                         .font(.headline)
                         .foregroundColor(.black)
                         .padding(.top, 10)
-                        .frame(width: 130, height: 100)
+                        .frame(width: 120, height: 80)
                     
                     Image(systemName: item.image)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50)
+                        .padding(.bottom, 10)
                         .foregroundColor(.black)
                     
                     Spacer()

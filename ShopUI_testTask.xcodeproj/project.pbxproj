@@ -23,6 +23,9 @@
 		849CC7A82A86B4B2007F16A4 /* BonusQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A72A86B4B2007F16A4 /* BonusQRView.swift */; };
 		849CC7AA2A86B930007F16A4 /* MiniPromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A92A86B930007F16A4 /* MiniPromoModel.swift */; };
 		849CC7AC2A86BB32007F16A4 /* MiniPromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7AB2A86BB32007F16A4 /* MiniPromoView.swift */; };
+		849CC7AE2A86D192007F16A4 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7AD2A86D192007F16A4 /* TitleView.swift */; };
+		849CC7B12A86D46D007F16A4 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7B02A86D46D007F16A4 /* ProductModel.swift */; };
+		849CC7B32A86D656007F16A4 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7B22A86D656007F16A4 /* ProductView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		849CC7A72A86B4B2007F16A4 /* BonusQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusQRView.swift; sourceTree = "<group>"; };
 		849CC7A92A86B930007F16A4 /* MiniPromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPromoModel.swift; sourceTree = "<group>"; };
 		849CC7AB2A86BB32007F16A4 /* MiniPromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPromoView.swift; sourceTree = "<group>"; };
+		849CC7AD2A86D192007F16A4 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		849CC7B02A86D46D007F16A4 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		849CC7B22A86D656007F16A4 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,7 @@
 			children = (
 				845D7DE12A86433D00BCCC7B /* ShopUI_testTaskApp.swift */,
 				845D7DE32A86433D00BCCC7B /* ContentView.swift */,
-				849CC7A52A86A8ED007F16A4 /* PromoModel.swift */,
-				849CC7A92A86B930007F16A4 /* MiniPromoModel.swift */,
+				849CC7AF2A86D44C007F16A4 /* Model */,
 				849CC79F2A86965A007F16A4 /* ViewModel */,
 				849CC79E2A86963C007F16A4 /* Views */,
 				849CC79C2A8671AB007F16A4 /* Extensions.swift */,
@@ -122,9 +127,21 @@
 				849CC7A02A8696A9007F16A4 /* SearchView.swift */,
 				849CC7A32A86A715007F16A4 /* PromoView.swift */,
 				849CC7AB2A86BB32007F16A4 /* MiniPromoView.swift */,
+				849CC7B22A86D656007F16A4 /* ProductView.swift */,
 				849CC7A72A86B4B2007F16A4 /* BonusQRView.swift */,
+				849CC7AD2A86D192007F16A4 /* TitleView.swift */,
 			);
 			path = Componenets;
+			sourceTree = "<group>";
+		};
+		849CC7AF2A86D44C007F16A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				849CC7A52A86A8ED007F16A4 /* PromoModel.swift */,
+				849CC7A92A86B930007F16A4 /* MiniPromoModel.swift */,
+				849CC7B02A86D46D007F16A4 /* ProductModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +218,7 @@
 				849CC7AA2A86B930007F16A4 /* MiniPromoModel.swift in Sources */,
 				845D7DE42A86433D00BCCC7B /* ContentView.swift in Sources */,
 				849CC7A12A8696A9007F16A4 /* SearchView.swift in Sources */,
+				849CC7B32A86D656007F16A4 /* ProductView.swift in Sources */,
 				845D7DF02A86454000BCCC7B /* HomeViewModel.swift in Sources */,
 				845D7DE22A86433D00BCCC7B /* ShopUI_testTaskApp.swift in Sources */,
 				849CC79D2A8671AB007F16A4 /* Extensions.swift in Sources */,
@@ -211,6 +229,8 @@
 				849CC7992A8647C4007F16A4 /* ExploreView.swift in Sources */,
 				849CC7952A864694007F16A4 /* MainTabView.swift in Sources */,
 				849CC7AC2A86BB32007F16A4 /* MiniPromoView.swift in Sources */,
+				849CC7AE2A86D192007F16A4 /* TitleView.swift in Sources */,
+				849CC7B12A86D46D007F16A4 /* ProductModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

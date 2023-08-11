@@ -35,6 +35,20 @@ struct HomeView: View {
                     Spacer()
                     BonusQRView(colors: [Color.white, Color("grayPromo")])
                     
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack (spacing: 0) {
+                            ForEach(MiniPromoModel.categories) { category in
+                                VStack {
+                                    GeometryReader { geo in
+                                        MiniPromoView(item: category)
+                                            .rotation3DEffect (
+                                                .degrees(-Double( geo.frame(in: .global) .minX) / 25), axis: (x: 0, y: 0, z: 0))
+                                    }
+                                    .frame(width: 160, height: 200)
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

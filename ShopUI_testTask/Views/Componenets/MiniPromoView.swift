@@ -23,9 +23,9 @@ struct MiniPromoView: View {
                         .font(.headline)
                         .foregroundColor(.black)
                         .padding(.top, 10)
-                        .frame(width: 150, height: 100)
+                        .frame(width: 130, height: 100)
                     
-                    Image(systemName: "cup.and.saucer.fill")
+                    Image(systemName: item.image)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 50, height: 50)
@@ -41,6 +41,6 @@ struct MiniPromoView: View {
 
 struct MiniPromoView_Previews: PreviewProvider {
     static var previews: some View {
-        MiniPromoView(item: MiniPromoModel.init(title: "Абонемент на кофе", color: "pink"))
+        MiniPromoView(item: MiniPromoModel.init(title: "Абонемент на кофе", color: "pink", image: "cup.and.saucer.fill"))
     }
 }

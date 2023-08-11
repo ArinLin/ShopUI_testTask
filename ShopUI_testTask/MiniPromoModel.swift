@@ -12,11 +12,12 @@ struct MiniPromoModel: Identifiable {
     let id = UUID().uuidString
     let title: String
     let color: String
+    let image: String
     
     static let categories = [
-        MiniPromoModel(title: "Абонемент на кофе", color: "seaBlue"),
-        MiniPromoModel(title: "Мои скидки", color: "pink"),
-        MiniPromoModel(title: "Карта в подарок", color: "paleGreen"),
-        MiniPromoModel(title: "Доставка за час", color: "paleBlue")
+        MiniPromoModel(title: "Абонемент на кофе", color: "seaBlue", image: "cup.and.saucer.fill"),
+        MiniPromoModel(title: "Мои скидки", color: "pink", image: "percent"),
+        MiniPromoModel(title: "Карта в подарок", color: "paleGreen", image: "creditcard.fill"),
+        MiniPromoModel(title: "Доставка за час", color: "paleBlue", image: "figure.walk.motion")
     ]
 }

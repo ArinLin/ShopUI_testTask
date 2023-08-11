@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @StateObject var homeVM = HomeViewModel.shared
+    
     var body: some View {
         ZStack {
             ScrollView {
-                
+                Spacer()
+                SearchView(txt: $homeVM.txtSearch)
             }
         }
     }

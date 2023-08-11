@@ -8,6 +8,9 @@
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
+    
     static var shared: HomeViewModel = HomeViewModel()
-    @State var selectTab: Int = 0
+    
+//    @Published var selectTab: Int = 0
+    @Published var txtSearch: String = ""
 }

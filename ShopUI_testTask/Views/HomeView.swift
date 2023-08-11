@@ -27,12 +27,14 @@ struct HomeView: View {
                                             .rotation3DEffect (
                                                 .degrees(-Double( geo.frame(in: .global) .minX) / 25), axis: (x: 0, y: 1, z: 0))
                                     }
-                                    .frame(width: 300, height: 250)
+                                    .frame(width: 300, height: 170)
                                 }
                             }
                         }
                     }
                     Spacer()
+                    BonusQRView(colors: [Color.white, Color("grayPromo")])
+                    
                 }
             }
         }

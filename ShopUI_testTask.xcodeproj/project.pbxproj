@@ -20,6 +20,7 @@
 		849CC7A12A8696A9007F16A4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A02A8696A9007F16A4 /* SearchView.swift */; };
 		849CC7A42A86A715007F16A4 /* PromoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A32A86A715007F16A4 /* PromoView.swift */; };
 		849CC7A62A86A8ED007F16A4 /* PromoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A52A86A8ED007F16A4 /* PromoModel.swift */; };
+		849CC7A82A86B4B2007F16A4 /* BonusQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849CC7A72A86B4B2007F16A4 /* BonusQRView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		849CC7A02A8696A9007F16A4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		849CC7A32A86A715007F16A4 /* PromoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoView.swift; sourceTree = "<group>"; };
 		849CC7A52A86A8ED007F16A4 /* PromoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoModel.swift; sourceTree = "<group>"; };
+		849CC7A72A86B4B2007F16A4 /* BonusQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusQRView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				849CC7A02A8696A9007F16A4 /* SearchView.swift */,
 				849CC7A32A86A715007F16A4 /* PromoView.swift */,
+				849CC7A72A86B4B2007F16A4 /* BonusQRView.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				849CC7972A864777007F16A4 /* HomeView.swift in Sources */,
 				849CC7A42A86A715007F16A4 /* PromoView.swift in Sources */,
 				849CC79B2A865D4B007F16A4 /* Constants.swift in Sources */,
+				849CC7A82A86B4B2007F16A4 /* BonusQRView.swift in Sources */,
 				849CC7992A8647C4007F16A4 /* ExploreView.swift in Sources */,
 				849CC7952A864694007F16A4 /* MainTabView.swift in Sources */,
 			);

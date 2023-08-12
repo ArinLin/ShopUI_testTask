@@ -62,12 +62,13 @@ struct MainTabView: View {
                         .resizable()
                         .frame(width: 25, height: 25)
                         .foregroundColor(selectedTab == self.selectedTab ? .green : .black)
+//                        .overlay(selectedTab == self.selectedTab ? Color.green : Color.black)
                     Text(title)
                         .font(.custom("Helvetica Regular", size: 12))
                         .foregroundColor(selectedTab == self.selectedTab ? .green : .black)
                 }
             }
-            .padding()
+//            .padding()
             .frame(maxWidth: .infinity, maxHeight: 60)
         }
 }

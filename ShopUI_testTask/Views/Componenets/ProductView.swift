@@ -44,8 +44,6 @@ struct ProductView: View {
                                 .scaledToFit()
                                 .frame(width: 30, height: 30)
                                 .foregroundColor(.green)
-                                .padding(.trailing, 2)
-                                .padding(.leading, 0)
                                 .padding(.top, 10)
                         }
                     }

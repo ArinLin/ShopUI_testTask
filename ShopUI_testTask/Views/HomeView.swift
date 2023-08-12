@@ -12,7 +12,7 @@ struct HomeView: View {
     @StateObject var homeVM = HomeViewModel.shared
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .top) {
             ScrollView {
                 VStack {
                     Spacer()
@@ -28,10 +28,11 @@ struct HomeView: View {
                                             .rotation3DEffect (
                                                 .degrees(-Double( geo.frame(in: .global) .minX) / 55), axis: (x: 1, y: 1, z: 0))
                                     }
-                                    .frame(width: 90, height: 125)
+                                    .frame(width: 90, height: 110)
                                 }
                             }
                         }
+                        .padding(5)
                     }
                     
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -47,9 +48,11 @@ struct HomeView: View {
                                 }
                             }
                         }
+                        .padding(10)
                     }
                     Spacer()
                     BonusQRView(colors: [Color.white, Color("grayPromo")])
+                        .padding(5)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
@@ -67,7 +70,7 @@ struct HomeView: View {
                     }
                     Spacer()
                     TitleView(title: "Рекомендуем")
-                        .padding()
+                        .padding(5)
                 
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
@@ -82,6 +85,7 @@ struct HomeView: View {
                                 }
                             }
                         }
+                        .padding(.top, 10)
                     }
 //                    Spacer()
 //                    TitleView(title: "Сладкое настроение")

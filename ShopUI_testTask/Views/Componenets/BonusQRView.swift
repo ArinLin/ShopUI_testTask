@@ -33,7 +33,7 @@ struct BonusQRView: View {
         .background (LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing))
         .cornerRadius(15)
         .shadow(color: .black.opacity(0.2), radius: 5, x: 4, y: 4)
-        .padding()
+        .padding(5)
     }
 }
 

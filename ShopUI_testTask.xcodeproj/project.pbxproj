@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		845D7DE22A86433D00BCCC7B /* ShopUI_testTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D7DE12A86433D00BCCC7B /* ShopUI_testTaskApp.swift */; };
-		845D7DE42A86433D00BCCC7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D7DE32A86433D00BCCC7B /* ContentView.swift */; };
 		845D7DE62A86433E00BCCC7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845D7DE52A86433E00BCCC7B /* Assets.xcassets */; };
 		845D7DE92A86433E00BCCC7B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845D7DE82A86433E00BCCC7B /* Preview Assets.xcassets */; };
 		845D7DF02A86454000BCCC7B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D7DEF2A86454000BCCC7B /* HomeViewModel.swift */; };
@@ -33,7 +32,6 @@
 /* Begin PBXFileReference section */
 		845D7DDE2A86433D00BCCC7B /* ShopUI_testTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopUI_testTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845D7DE12A86433D00BCCC7B /* ShopUI_testTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopUI_testTaskApp.swift; sourceTree = "<group>"; };
-		845D7DE32A86433D00BCCC7B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		845D7DE52A86433E00BCCC7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845D7DE82A86433E00BCCC7B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		845D7DEF2A86454000BCCC7B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				845D7DE12A86433D00BCCC7B /* ShopUI_testTaskApp.swift */,
-				845D7DE32A86433D00BCCC7B /* ContentView.swift */,
 				849CC7AF2A86D44C007F16A4 /* Model */,
 				849CC79F2A86965A007F16A4 /* ViewModel */,
 				849CC79E2A86963C007F16A4 /* Views */,
@@ -223,7 +220,6 @@
 				849CC7B52A87692C007F16A4 /* StoryView.swift in Sources */,
 				849CC7A62A86A8ED007F16A4 /* PromoModel.swift in Sources */,
 				849CC7AA2A86B930007F16A4 /* MiniPromoModel.swift in Sources */,
-				845D7DE42A86433D00BCCC7B /* ContentView.swift in Sources */,
 				849CC7A12A8696A9007F16A4 /* SearchView.swift in Sources */,
 				849CC7B32A86D656007F16A4 /* ProductView.swift in Sources */,
 				845D7DF02A86454000BCCC7B /* HomeViewModel.swift in Sources */,

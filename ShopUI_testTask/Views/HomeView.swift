@@ -51,6 +51,7 @@ struct HomeView: View {
                     }
                     Spacer()
                     TitleView(title: "Рекомендуем")
+                        .frame(width: .infinity, height: 60)
                 
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
@@ -61,7 +62,7 @@ struct HomeView: View {
                                             .rotation3DEffect (
                                                 .degrees(-Double( geo.frame(in: .global) .minX) / 25), axis: (x: 0, y: 0, z: 0))
                                     }
-                                    .frame(width: 150, height: 170)
+                                    .frame(width: 150, height: 200)
                                 }
                             }
                         }

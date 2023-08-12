@@ -36,14 +36,18 @@ struct ProductView: View {
                                 .strikethrough()
                                 .padding(.leading, 2)
                         }
-                        Image(systemName: "cart.circle.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 30, height: 30)
-                            .foregroundColor(.green)
-                            .padding(.trailing, 2)
-                            .padding(.leading, 0)
-                            .padding(.top, 10)
+                        Button {
+                            print("добавить в корзину")
+                        } label: {
+                            Image(systemName: "cart.circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(.green)
+                                .padding(.trailing, 2)
+                                .padding(.leading, 0)
+                                .padding(.top, 10)
+                        }
                     }
                 }
                 .padding()

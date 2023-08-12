@@ -17,6 +17,22 @@ struct HomeView: View {
                 VStack {
                     Spacer()
                     SearchView(txt: $homeVM.txtSearch)
+                        .padding()
+                    
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack (spacing: 0) {
+                            ForEach(StoryModel.categories) { category in
+                                VStack {
+                                    GeometryReader { geo in
+                                        StoryView(item: category)
+                                            .rotation3DEffect (
+                                                .degrees(-Double( geo.frame(in: .global) .minX) / 55), axis: (x: 1, y: 1, z: 0))
+                                    }
+                                    .frame(width: 90, height: 125)
+                                }
+                            }
+                        }
+                    }
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
@@ -51,7 +67,7 @@ struct HomeView: View {
                     }
                     Spacer()
                     TitleView(title: "Рекомендуем")
-                        .frame(width: .infinity, height: 60)
+                        .padding()
                 
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
@@ -67,7 +83,7 @@ struct HomeView: View {
                             }
                         }
                     }
-                    Spacer()
+//                    Spacer()
 //                    TitleView(title: "Сладкое настроение")
                 }
 //                Spacer()

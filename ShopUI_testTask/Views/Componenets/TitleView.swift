@@ -15,6 +15,7 @@ struct TitleView: View {
         VStack(alignment: .leading) {
             Text(title)
                 .font(.system(size: 24, weight: .semibold, design: .default))
+                .multilineTextAlignment(.leading)
                 .foregroundColor(Color.black)
         }
     }

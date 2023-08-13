@@ -10,32 +10,26 @@ import SwiftUI
 struct MiniPromoView: View {
     var item: MiniPromoModel
     var body: some View {
-        VStack(spacing: 0) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 25)
-                    .foregroundColor(Color(item.color))
-                    .frame(width: 120, height: 153)
-                Spacer()
+        ZStack {
+            RoundedRectangle(cornerRadius: 25)
+                .foregroundColor(Color(item.color))
+                .frame(width: 120, height: 153)
+            
+            VStack(alignment: .center) {
+                Text(item.title)
+                    .font(.headline)
+                    .foregroundColor(.black)
+                    .padding(.top, 10)
+                    .frame(width: 120, height: 80)
                 
-                VStack(alignment: .center) {
-                    Spacer()
-                    Text(item.title)
-                        .font(.headline)
-                        .foregroundColor(.black)
-                        .padding(.top, 10)
-                        .frame(width: 120, height: 80)
-                    
-                    Image(systemName: item.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50)
-                        .padding(.bottom, 10)
-                        .foregroundColor(.black)
-                    
-                    Spacer()
-                }
-                .padding()
+                Image(systemName: item.image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 50, height: 50)
+                    .padding(.bottom, 10)
+                    .foregroundColor(.black)
             }
+            .padding()
         }
     }
 }

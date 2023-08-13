@@ -9,16 +9,14 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @StateObject var homeVM = HomeViewModel.shared
+    @State var txtSearch: String = ""
     
     var body: some View {
-        ZStack(alignment: .top) {
+        VStack {
+            SearchView(txt: $txtSearch)
             ScrollView {
                 VStack {
                     Spacer()
-                    SearchView(txt: $homeVM.txtSearch)
-                        .padding()
-                    
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
                             ForEach(StoryModel.categories) { category in
@@ -34,6 +32,10 @@ struct HomeView: View {
                         }
                         .padding(5)
                     }
+                    
+//                    MyCarousel<Model>(model: PromoModel.colors) { Model.Element in
+//                        PromoView(colors: Model.Element.colors)
+//                    }
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
@@ -51,7 +53,7 @@ struct HomeView: View {
                         .padding(10)
                     }
                     Spacer()
-                    BonusQRView(colors: [Color.white, Color("grayPromo")])
+                    BonusQRView(colors: [Color("grayPromo")])
                         .padding(5)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
@@ -68,10 +70,36 @@ struct HomeView: View {
                             }
                         }
                     }
-                    Spacer()
-                    TitleView(title: "Рекомендуем")
-                        .padding(5)
+                    HStack() {
+                        TitleView(title: "Рекомендуем")
+                            .padding(.bottom, 5)
+                            .padding(.leading, 15)
+                        Spacer()
+                    }
                 
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack (spacing: 0) {
+                            ForEach(ProductModel.categories) { category in
+                                VStack {
+                                    GeometryReader { geo in
+                                        ProductView(item: category)
+                                            .rotation3DEffect (
+                                                .degrees(-Double( geo.frame(in: .global) .minX) / 25), axis: (x: 0, y: 0, z: 0))
+                                    }
+                                    .frame(width: 150, height: 190)
+                                }
+                            }
+                        }
+                        .padding(.top, 10)
+                        .padding(.leading, 15)
+                    }
+                    HStack() {
+                        TitleView(title: "Сладкое настроение")
+                            .padding(.bottom, 5)
+                            .padding(.leading, 15)
+                        Spacer()
+                    }
+                    
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
                             ForEach(ProductModel.categories) { category in
@@ -86,11 +114,9 @@ struct HomeView: View {
                             }
                         }
                         .padding(.top, 10)
+                        .padding(.leading, 15)
                     }
-//                    Spacer()
-//                    TitleView(title: "Сладкое настроение")
                 }
-//                Spacer()
             }
         }
     }

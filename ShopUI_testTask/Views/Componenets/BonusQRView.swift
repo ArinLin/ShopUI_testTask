@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct BonusQRView: View {
-    var colors: [Color]
+    let colors: [Color]
     var body: some View {
-        ZStack {
             VStack(alignment: .leading) {
                 HStack {
                     Text("0 бонусов")
@@ -28,9 +27,8 @@ struct BonusQRView: View {
                         .padding(30)
                 }
             }
-        }
-        .frame(width: 338, height: 128)
-        .background (LinearGradient(colors: colors, startPoint: .leading, endPoint: .trailing))
+            .frame(width: 338, height: 128)
+        .background(Color("grayPromo"))
         .cornerRadius(15)
         .shadow(color: .black.opacity(0.2), radius: 5, x: 4, y: 4)
         .padding(5)
@@ -39,6 +37,6 @@ struct BonusQRView: View {
 
 struct BonusQRView_Previews: PreviewProvider {
     static var previews: some View {
-        BonusQRView(colors: [Color.white, Color("grayPromo")])
+        BonusQRView(colors: [Color("grayPromo")])
     }
 }

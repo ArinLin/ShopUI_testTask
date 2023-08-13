@@ -19,20 +19,19 @@ struct MainTabView: View {
     @State private var selectedTab: Tab = .shop
         
         var body: some View {
-            VStack {
+            VStack(spacing: 0) {
                 Spacer()
-                if selectedTab == .shop {
+                switch selectedTab {
+                case .shop:
                     HomeView()
-                } else if selectedTab == .explore {
-                    Text("Explore View")
-                } else if selectedTab == .cart {
-                    Text("Cart View")
-                } else if selectedTab == .profile {
-                    Text("Profile View")
+                case .explore:
+                    ExploreView()
+                case .cart:
+                    CartView()
+                case .profile:
+                    ProfileView()
                 }
-                
-                Spacer()
-                
+
                 HStack {
                     tabButton(selectedTab: .shop,
                               imageName: "shop",
@@ -60,15 +59,14 @@ struct MainTabView: View {
                 VStack {
                     Image(imageName)
                         .resizable()
-                        .frame(width: 25, height: 25)
+                        .renderingMode(.template)
                         .foregroundColor(selectedTab == self.selectedTab ? .green : .black)
-//                        .overlay(selectedTab == self.selectedTab ? Color.green : Color.black)
+                        .frame(width: 25, height: 25)
                     Text(title)
-                        .font(.custom("Helvetica Regular", size: 12))
+                        .font(.system(size: 12))
                         .foregroundColor(selectedTab == self.selectedTab ? .green : .black)
                 }
             }
-//            .padding()
             .frame(maxWidth: .infinity, maxHeight: 60)
         }
 }

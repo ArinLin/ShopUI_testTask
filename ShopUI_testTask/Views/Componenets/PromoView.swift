@@ -8,32 +8,30 @@
 import SwiftUI
 
 struct PromoView: View {
-    var colors: [Color]
+    let colors: [Color]
     var body: some View {
-        ZStack {
-            VStack(alignment: .leading) {
-                HStack (alignment: .center) {
-                    Text("Cкидка до 30%")
-                        .font(.system(size: 12, weight: .semibold, design: .default))
-                        .foregroundColor(Color("greenPromoDark"))
-                        .padding(10)
-                        .background(Color("yellow"))
-                        .cornerRadius(8)
-                        .padding(10)
-                    Text("C 13 по 23 июля")
-                        .font(.system(size: 12, weight: .semibold, design: .default))
-                        .foregroundColor(Color("greenPromoDark"))
-                        .padding(10)
-                        .background(Color.white)
-                        .cornerRadius(8)
-                        .padding(10)
-                }
-                HStack {
-                    Text("Крутые скидки")
-                        .padding(10)
-                        .font(.system(size: 22, weight: .semibold, design: .default))
-                        .foregroundColor(Color.white)
-                }
+        VStack(alignment: .leading) {
+            HStack (alignment: .center) {
+                Text("Cкидка до 30%")
+                    .font(.system(size: 12, weight: .semibold, design: .default))
+                    .foregroundColor(Color("greenPromoDark"))
+                    .padding(10)
+                    .background(Color("yellow"))
+                    .cornerRadius(8)
+                    .padding(10)
+                Text("C 13 по 23 июля")
+                    .font(.system(size: 12, weight: .semibold, design: .default))
+                    .foregroundColor(Color("greenPromoDark"))
+                    .padding(10)
+                    .background(Color.white)
+                    .cornerRadius(8)
+                    .padding(10)
+            }
+            HStack {
+                Text("Крутые скидки")
+                    .padding(10)
+                    .font(.system(size: 22, weight: .semibold, design: .default))
+                    .foregroundColor(Color.white)
             }
         }
         .frame(width: 292, height: 153)

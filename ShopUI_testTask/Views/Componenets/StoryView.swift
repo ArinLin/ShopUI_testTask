@@ -20,7 +20,7 @@ struct StoryView: View {
                     .aspectRatio(contentMode: .fill)
                     .padding(6)
                     .frame(width: 60, height: 60)
-                    .clipShape(Circle ())
+                    .clipShape(Circle())
                     .overlay(
                         Circle()
                             .stroke(LinearGradient (gradient: Gradient (colors: [Color("greenPromoLight"), Color("greenPromoDark")]), startPoint:

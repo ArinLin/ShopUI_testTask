@@ -12,12 +12,10 @@ struct TitleView: View {
     var didTap: (()->())?
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(title)
-                .font(.system(size: 24, weight: .semibold, design: .default))
-                .multilineTextAlignment(.leading)
-                .foregroundColor(Color.black)
-        }
+        Text(title)
+            .font(.system(size: 24, weight: .semibold, design: .default))
+            .multilineTextAlignment(.leading)
+            .foregroundColor(Color.black)
     }
 }
 

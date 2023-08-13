@@ -8,10 +8,6 @@
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
-    
-    static var shared: HomeViewModel = HomeViewModel()
-
     @Published var txtSearch: String = ""
     @Published var isSearchBarVisible = false
-    let searchBarHeight: CGFloat = 50
 }

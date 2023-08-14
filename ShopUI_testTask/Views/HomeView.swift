@@ -33,16 +33,12 @@ struct HomeView: View {
                         .padding(5)
                     }
                     
-//                    MyCarousel<Model>(model: PromoModel.colors) { Model.Element in
-//                        PromoView(colors: Model.Element.colors)
-//                    }
-                    
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
-                            ForEach(PromoModel.colors) { colors in
+                            ForEach(PromoModel.category) { category in
                                 VStack {
                                     GeometryReader { geo in
-                                        PromoView(colors: colors.colors)
+                                        PromoView(item: category)
                                             .rotation3DEffect (
                                                 .degrees(-Double( geo.frame(in: .global) .minX) / 25), axis: (x: 0, y: 1, z: 0))
                                     }
@@ -50,11 +46,13 @@ struct HomeView: View {
                                 }
                             }
                         }
-                        .padding(10)
+                        .padding(.bottom, 15)
+                        .padding(.leading, 5)
+                        .padding(.trailing, 25)
                     }
                     Spacer()
                     BonusQRView(colors: [Color("grayPromo")])
-                        .padding(5)
+                        .padding(.leading, 5)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack (spacing: 0) {
@@ -70,6 +68,8 @@ struct HomeView: View {
                             }
                         }
                     }
+                    .padding(.leading, 5)
+
                     HStack() {
                         TitleView(title: "Рекомендуем")
                             .padding(.bottom, 5)
@@ -92,6 +92,7 @@ struct HomeView: View {
                         }
                         .padding(.top, 10)
                         .padding(.leading, 15)
+                        .padding(.trailing, 15)
                     }
                     HStack() {
                         TitleView(title: "Сладкое настроение")
@@ -115,6 +116,7 @@ struct HomeView: View {
                         }
                         .padding(.top, 10)
                         .padding(.leading, 15)
+                        .padding(.trailing, 15)
                     }
                 }
             }

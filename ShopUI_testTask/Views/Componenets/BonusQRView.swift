@@ -31,7 +31,6 @@ struct BonusQRView: View {
         .background(Color("grayPromo"))
         .cornerRadius(15)
         .shadow(color: .black.opacity(0.2), radius: 5, x: 4, y: 4)
-        .padding(5)
     }
 }
 

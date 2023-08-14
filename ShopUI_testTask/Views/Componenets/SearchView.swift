@@ -36,17 +36,18 @@ struct SearchView: View {
             }) {
                 Image("menu")
                     .resizable()
-                    .scaledToFit()
+                    .renderingMode(.template)
+                    .foregroundColor(.green)
                     .frame(width: 25, height: 25)
             }
         }
         .padding(10)
+        Divider()
     }
 }
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView(txt: .constant(""))
-            .padding (15)
     }
 }
